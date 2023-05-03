@@ -1,1 +1,1 @@
-## Snake Game using Pygame module in python
+## Snake Game using Pygame module 
