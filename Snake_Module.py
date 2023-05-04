@@ -1,9 +1,5 @@
 # import module we need in project
 import pygame
-from pygame.locals import *
-
-# class snake style
-
 
 class Snake:
     def __init__(self, Screen, Snake_length):
@@ -14,13 +10,12 @@ class Snake:
         self.SizeSnakeHead = 40
 
         # set X,Y coordinates of initial position to snake
-        self.Snake_pos_X, self.Snake_pos_Y = (
-            [self.SizeSnakeHead] * Snake_length), ([self.SizeSnakeHead] * Snake_length)
+        self.Snake_pos_X, self.Snake_pos_Y = ([self.SizeSnakeHead] * Snake_length), ([self.SizeSnakeHead] * Snake_length)
 
     def increase_Snake_lenght(self):
         self.Snake_length += 1
-        self.Snake_pos_X.append(0)
-        self.Snake_pos_Y.append(0)
+        self.Snake_pos_X.append(self.Snake_pos_X[-1])
+        self.Snake_pos_Y.append(self.Snake_pos_Y[-1])
 
     # set new position of the snake head base on direction
     def change_direction(self, new_direction):
@@ -51,4 +46,6 @@ class Snake:
             self.Snake_pos_X[index_body] = self.Snake_pos_X[index_body - 1]
             self.Snake_pos_Y[index_body] = self.Snake_pos_Y[index_body - 1]
 
-        self.Draw_Snake()
+ 
+            
+

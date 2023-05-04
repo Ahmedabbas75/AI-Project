@@ -43,6 +43,7 @@ class GameWindow:
     def Run(self, Running=True):
         while Running:
             self.Play_Game()
+            
             # allaw window to receive input from keyboard
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
