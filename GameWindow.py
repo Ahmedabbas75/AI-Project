@@ -23,8 +23,9 @@ class Game_Window:
         return False
 
     def Play_Game(self):
+        pygame.display.update()
         self.Window.fill((110, 110, 5))
-        self.clock.tick(60)
+        self.clock.tick(10)
         self.snake.Snake_Walk()
         if self.Check_ate_Food():
             self.snake.increase_Snake_lenght()
@@ -58,7 +59,7 @@ class Game_Window:
                 elif event.type == QUIT:
                     Running = False
 
-            time.sleep(.3)
+            # time.sleep(.3)
 
 
 if __name__ == '__main__':
