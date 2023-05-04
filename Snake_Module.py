@@ -11,24 +11,19 @@ class Snake:
         self.Direction = "right"
         self.SizeSnakeHead = 40
 
+      
+
         # set X,Y coordinates of initial position to snake      
         self.Snake_pos_X, self.Snake_pos_Y = ([self.SizeSnakeHead] * Snake_length), ([self.SizeSnakeHead] * Snake_length)
 
-    # set new position of the snake head base on left direction
-    def Move_left(self):
-       self.Direction = "left"
+    def increase_Snake_lenght(self):
+        self.Snake_length+=1
+        self.Snake_pos_X.append(0)
+        self.Snake_pos_Y.append(0)
 
-    # set new position of the snake head base on right direction
-    def Move_right(self):
-        self.Direction = "right"
-
-    # set new position of the snake head base on up direction
-    def Move_up(self):
-       self.Direction = "up"
-
-    # set new position of the snake head base on down direction
-    def Move_down(self):
-        self.Direction = "down"
+    # set new position of the snake head base on direction
+    def change_direction(self, new_direction):
+        self.Direction = new_direction
 
     # update head of snake
     def Draw_Snake(self):
