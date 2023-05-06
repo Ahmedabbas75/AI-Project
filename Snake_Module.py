@@ -11,6 +11,7 @@ class Snake:
 
         # set X,Y coordinates of initial position to snake
         self.snake_pos_x, self.snake_pos_y = ([self.sizes_head] * Snake_length), ([self.sizes_head] * Snake_length)
+    
     def get_Snake_length(self):
         return self.Snake_length
 
