@@ -177,9 +177,6 @@ class Node():
             if node_position[0] >= GRID_HEIGHT  or node_position[0] < 0 or node_position[1] >= GRID_HEIGHT  or node_position[1] < 0:
                 continue
 
-            # if grid[node_position[0], node_position[1]] != 0 and grid[node_position[0], node_position[1]] != 2 and grid[node_position[0], node_position[1]] != 4:
-            #     continue
-
             if (grid[node_position[1], node_position[0]] == 1 or grid[node_position[1], node_position[0]] == 3 or (grid[node_position[1], node_position[0]] == 4)):
                 continue
 
@@ -268,10 +265,7 @@ def dfs(start_pos, goal_pos):
                 open_list.insert(0, child)
     
     return None
-        
-
-
-            
+                  
 score = 0
 grid = 0
 def reset_grid():
@@ -359,8 +353,6 @@ def main():
 
         snake.move()
       
-
-        
          
         pygame.display.update()
         for event in pygame.event.get():
