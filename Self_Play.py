@@ -6,7 +6,7 @@ from pygame.display import update
 import pygame
 #import splashscreen
 
-SCREEN_WIDTH = 400
+SCREEN_WIDTH = 720
 SCREEN_HEIGHT = 720
 
 GRIDSIZE = 40

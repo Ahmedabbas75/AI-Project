@@ -3,7 +3,7 @@ import pygame
 
 class Snake:
     def __init__(self, Screen, Snake_length):
-        self.SnakeHead = pygame.image.load("resources/block.jpg").convert()
+        self.SnakeHead = pygame.image.load("resources/snake.jpg").convert()
         self.Snake_length = Snake_length
         self.parent_screen = Screen
         self.Direction = "right"
@@ -11,6 +11,8 @@ class Snake:
 
         # set X,Y coordinates of initial position to snake
         self.snake_pos_x, self.snake_pos_y = ([self.sizes_head] * Snake_length), ([self.sizes_head] * Snake_length)
+    def get_Snake_length(self):
+        return self.Snake_length
 
     def increase_Snake_lenght(self):
         self.Snake_length += 1
@@ -20,6 +22,9 @@ class Snake:
     # set new position of the snake head base on direction
     def change_direction(self, new_direction):
         self.Direction = new_direction
+
+    def get_snake_pos(self):
+        return [self.snake_pos_x,self.snake_pos_y]
 
     # update head of snake
     def Draw_Snake(self):
@@ -57,6 +62,14 @@ class Snake:
             if self.check_colliding(self.snake_pos_x[0],self.snake_pos_y[0],
                         self.snake_pos_x[check_index],self.snake_pos_y[check_index]):
               raise "Game over"
+            
+    
+    
+            
+
+
+     
+        
 
 
     
