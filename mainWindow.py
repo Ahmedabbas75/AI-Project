@@ -1,10 +1,9 @@
 # importing libraries
 from GameWindow import *
-from PyQt5.QtWidgets import *
-import sys
 from Self_Play import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
+import sys
 
 # class mainwindow
 class MainWindow(QMainWindow):
@@ -41,15 +40,15 @@ class MainWindow(QMainWindow):
         itselfPlay_button = QPushButton("self Play Game",self)
         itselfPlay_button.setGeometry(20,250,360,40)
         itselfPlay_button.setStyleSheet("border-radius:10px;font-size:25px;bacKground:#344D67;color:white;")
-        itselfPlay_button.clicked.connect(self.S)
-        
-    def start(self):
+        itselfPlay_button.clicked.connect(self.start_play_itself)
+            
+    def start_user_play(self):
         game = GameWindow()
         game.Run_Game()
 
-    def S(self):
+    def start_play_itself(self):
         main()
-    
+
 if __name__ == '__main__':
 
     # create pyqt5 app
@@ -57,7 +56,6 @@ if __name__ == '__main__':
 
     # create the instance of our Window
     window = MainWindow()
-
 
     # start the app
     sys.exit(App.exec_())
