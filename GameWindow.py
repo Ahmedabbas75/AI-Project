@@ -1,5 +1,6 @@
 # import module we need in project
 import pygame
+import sys
 from Snake_Module import *
 from Food_Module import *
 
@@ -39,7 +40,6 @@ class GameWindow:
         # window style
         pygame.display.update()
         self.background_image()
-        self.clock.tick(60)
         self.time_update()
         self.display_score()
 
@@ -55,10 +55,12 @@ class GameWindow:
         self.food.Draw_Food()
         self.snake.Draw_Snake()
 
+        self.clock.tick(60)
+
     def display_score(self):
         font_style = pygame.font.SysFont("Arial",30)
         score = font_style.render(f"Score: {self.snake.Snake_length - 1}",True, (255,255,255))
-        self.window.blit(score,(700,10))
+        self.window.blit(score,(650,10))
 
     def over_game(self):
         font = pygame.font.SysFont('arial', 30)
@@ -74,6 +76,7 @@ class GameWindow:
         self.background_music()
         self.snake = Snake(self.window,2)
         self.food = Food(self.window)
+        
 
 
     def make_sound(self,sound_name):
@@ -105,7 +108,7 @@ class GameWindow:
 
                     if event.key == pygame.K_RETURN:
                         pause = False
-                    
+                     
                     if not pause:
                         if event.key == pygame.K_LEFT:
                             self.snake.change_direction("left")
@@ -121,19 +124,15 @@ class GameWindow:
 
                 # when user want to exit window game
                 elif event.type == pygame.QUIT:
+                    pygame.quit()
                     running = False
-            
-            try:
-                if not pause:
-                    self.Play_Game()
-            
-            except Exception as e:
-                self.make_sound("game_over")
-                self.over_game()
-                pause = True
-                self.reset_game_after_over()
-
-        
-if __name__ == '__main__':
-    Game = GameWindow()
-    Game.Run_Game()
+            if running:
+                try:
+                    if not pause:
+                        self.Play_Game()
+                
+                except Exception:
+                    self.make_sound("game_over")
+                    self.over_game()
+                    pause = True
+                    self.reset_game_after_over()
