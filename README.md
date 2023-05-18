@@ -33,8 +33,7 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 # User play itself
 - Click on play game button of MainWindow (Game window appear)
 
-<img src="https://media.giphy.com/media/
-![user_play_itself](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/52e65dda-32a5-42e3-ba0d-b5a1e2827843) /giphy.gif" width="40" height="40" />
+![user_play_itself](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/579b238f-d9c4-4405-8d94-c5fb64c9eb69)
 
 
 
