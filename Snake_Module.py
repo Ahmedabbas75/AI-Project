@@ -58,26 +58,10 @@ class Snake:
                 return True
         return False
     
+    
     def is_collision(self):
         for check_index in range(3,self.Snake_length):
             if self.check_colliding(self.snake_pos_x[0],self.snake_pos_y[0],
                         self.snake_pos_x[check_index],self.snake_pos_y[check_index]):
-              raise "Game over"
+                raise "Game over"
             
-    
-    
-            
-
-
-     
-        
-
-
-    
-    
- 
-    
-
- 
-            
-
