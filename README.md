@@ -28,7 +28,6 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 # How to execute game
 - MainWindow Run the Game.
 
-- This is main window game
 ![main window](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/4adaa350-9d8d-4f78-aebd-5096792a2661)
 
 # User play itself
