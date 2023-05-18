@@ -20,6 +20,16 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 5. After an food is eaten by the snake, another food is placed randomly with uniform probability on one available squares of the board.
 
 # Requirements
+1. Python.
+2. Pygame.
+3. Numpy. 
+4. PyQt5.
+
+# what to expect
+MainWindow Run the Game.
+
+# User play itself
+
 
 
 
