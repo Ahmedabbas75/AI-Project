@@ -44,7 +44,7 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 
 # Why this Project
 
-#### Project done under supervision of  Prof. [@Sara El-Metwally](https://github.com/SaraEl-Metwally)
+#### Project done under supervision of  Prof. [@Sara El-Metwally](https://github.com/SaraEl-Metwally) by :
 
 [@Ahmed Mohmmed abbas](https://github.com/Ahmedabbas75) | section 2
 
