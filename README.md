@@ -39,7 +39,10 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 ![user_play_itself](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/579b238f-d9c4-4405-8d94-c5fb64c9eb69)
 
 - Some screen when user play
-
+<p float="left">
+  <img src='resources/screen 1.png' width='400'/>
+  <img src='resources/screen 2.png' width='400'/>
+</p>
 
 
 
