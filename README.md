@@ -36,8 +36,10 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 # Some screen 
 
 <p float="left">
+  <img src='resources/screen 3.png' width='400'/>
   <img src='resources/screen 1.png' width='400'/>
   <img src='resources/screen 2.png' width='400'/>
+  <img src='resources/screen 4.png' width='400'/>
 </p>
 
 
