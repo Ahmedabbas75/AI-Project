@@ -33,12 +33,8 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 
 ![main window](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/4adaa350-9d8d-4f78-aebd-5096792a2661)
 
-# User play itself
-- Click on play game button of MainWindow (Game window appear)
+# Some screen 
 
-![user_play_itself](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/579b238f-d9c4-4405-8d94-c5fb64c9eb69)
-
-- Some screen when user play
 <p float="left">
   <img src='resources/screen 1.png' width='400'/>
   <img src='resources/screen 2.png' width='400'/>
