@@ -18,6 +18,8 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 4. The board size is ﬁxed to square.
 
 5. After an food is eaten by the snake, another food is placed randomly with uniform probability on one available squares of the board.
+# Game Flow-chart
+![Snake game state](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/7cc42be0-e4eb-486c-ac8d-c01adb45f2b6)
 
 # Requirements
 1. Python.
@@ -34,6 +36,10 @@ The growth is immediately reﬂected by the gained length of the tail, i.e. the 
 - Click on play game button of MainWindow (Game window appear)
 
 ![user_play_itself](https://github.com/Ahmedabbas75/AI-Project/assets/119451645/579b238f-d9c4-4405-8d94-c5fb64c9eb69)
+
+- Some screen when user play
+
+
 
 
 
